@@ -15,7 +15,7 @@ function getSearchResult(value) {
     .then((res) => res.json())
     .then((songs) => displaySearchResult(songs));
 }
-// getting the lyrics from the api
+// getting lyrics from the api
 
 function getLyrics(btn) {
   const getLyrics = document.getElementsByClassName("getLyrics");
@@ -60,7 +60,6 @@ function displaySearchResult(songs) {
                                 </div>`;
   }
 }
-
 // go back to search result
 function hide() {
   const displayArea = document.getElementById("lyricsArea");
