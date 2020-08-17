@@ -5,7 +5,6 @@ searchArea.addEventListener("keypress", (go) => {
     getSearchResult(searchArea.value);
   }
 });
-// Button activation
 const searchButton = document.getElementById("searchButton");
 searchButton.addEventListener("click", () => {
   getSearchResult(searchArea.value);
@@ -13,7 +12,7 @@ searchButton.addEventListener("click", () => {
 // Getting search data by api
 function getSearchResult(value) {
   fetch(`https://api.lyrics.ovh/suggest/${value}`)
-    .then((response) => response.json())
+    .then((res) => res.json())
     .then((songs) => displaySearchResult(songs));
 }
 // getting the lyrics from the api
