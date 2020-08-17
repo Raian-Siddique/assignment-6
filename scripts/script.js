@@ -62,7 +62,7 @@ function displaySearchResult(songs) {
   }
 }
 
-// remove lyrics
+// go back to search result
 function hide() {
   const displayArea = document.getElementById("lyricsArea");
   displayArea.remove();
